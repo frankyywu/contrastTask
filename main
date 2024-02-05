@@ -1,0 +1,19 @@
+import random
+
+# 1. setup
+# initialize general parameters and variables
+mouse_id = 'SC_vglut #4 Stage_6'
+training_stage = 6
+# number of trials
+total_trial_number = 360
+inter_trial_interval = 3+1*random.random()
+timeout_duration = 2
+cue_duration = 4 # drifting grating total time 8s. In correct trial, the drifting grating will disappear 1s after reward
+train_left_side = 0 #1 start with left block 0, start with right block
+wheel_target = 40
+water_size = 80
+forced_reward_number = 31 #only valid for training_stage 2
+blockSize = 30 #valid for cue training_stage 3-7, no cue 2-5, 90 for no cue stage 2, 30 for no cue 3-5
+laser_ON = 1
+
+# 2. run your training scheme (a program)
